@@ -2,12 +2,17 @@
 #
 # animal me - Grab a random gif from http://animalsbeingdicks.com/
 #
+
+module.exports = (robot) ->
+  robot.respond /animal me/i, (msg) ->
+    msg.send "In all honesty I'd love to show you an animated gif of an animal doing something stupid but sadly it makes me crash so I'm not even going to try anymore. Sorry boss."
+
+/*
 Select     = require("soupselect").select
 HtmlParser = require "htmlparser"
 
 module.exports = (robot) ->
   robot.respond /animal me/i, (msg) ->
-    console.log msg
     randimalMe msg, (url) ->
       msg.send url
 
@@ -29,3 +34,4 @@ animalMe = (msg, location, cb) ->
 
       console.log img
       cb img[0].attribs.src
+*/
