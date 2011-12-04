@@ -5,5 +5,5 @@
 
 module.exports = (robot) ->
   robot.respond /animal me/i, (msg) ->
-    msg.send "I'd love to show you animated gifs of dumb animals but sadly it makes me crash. I'm not even going to try anymore, sorry boss."
+    msg.send "Sorry, this will make me crash.. can't do it :("
 
