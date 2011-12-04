@@ -7,6 +7,7 @@ HtmlParser = require "htmlparser"
 
 module.exports = (robot) ->
   robot.respond /animal me/i, (msg) ->
+    console.log msg
     randimalMe msg, (url) ->
       msg.send url
 
