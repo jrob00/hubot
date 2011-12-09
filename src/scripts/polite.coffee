@@ -30,11 +30,33 @@ module.exports = (robot) ->
   robot.respond /(thanks|thank you|cheers|nice one)/i, (msg) ->
     msg.reply msg.random responses
 
+  robot.hear /(thanks|thank you|cheers|nice one).*hubot.*/i, (msg) ->
+    msg.reply msg.random responses
+
+
   robot.respond /(ty|thx)/i, (msg) ->
     msg.reply msg.random shortResponses
 
+  robot.hear /(ty|thx).*hubot.*/i, (msg) ->
+    msg.reply msg.random shortResponses
+
+
   robot.respond /(hello|hi|sup|howdy|good (morning|evening|afternoon))/i, (msg) ->
     msg.reply "#{robot.name} at your service!"
-    
+
+  robot.hear /(hello|hi|sup|howdy|good (morning|evening|afternoon)).*hubot.*/i, (msg) ->
+    msg.reply "#{robot.name} at your service!"
+
+
   robot.respond /(bye|night|goodbye|good night)/i, (msg) ->
     msg.reply msg.random farewellResponses
+
+  robot.hear /(bye|night|goodbye|good night).*hubot.*/i, (msg) ->
+    msg.reply msg.random farewellResponses
+
+
+  robot.enter (msg) ->
+    msg.reply "Welcome!"
+
+  robot.leave (msg) ->
+    msg.send "Was it something I said?"
