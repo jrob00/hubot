@@ -1,7 +1,8 @@
 # Robot Memes
 #
-# mention the word robot to hubot and he responds with a meme
-#
+# hubot robot - mention the word robot to hubot
+#               and he responds with a robot meme
+
 
 robotmemes = [
 	"http://troll.me/images/ancient-aliens-guy/but-you-see-steve-is-a-alien-robot-thumb.jpg",
@@ -14,7 +15,6 @@ robotmemes = [
 	"http://troll.me/images/conspiracy-keanu/cant-read-the-captcha-verification-what-if-i-am-a-robot-thumb.jpg",
 	"http://troll.me/images/conspiracy-keanu/he-busts-the-robot-dance-so-well-what-if-hes-a-robot-thumb.jpg",
 	"http://troll.me/images/conspiracy-keanu/what-if-dubstep-is-just-robots-singing-thumb.jpg",
-	"http://troll.me/images/conspiracy-keanu/what-if-everyone-is-a-robot-except-me-thumb.jpg",
 	"http://troll.me/images/conspiracy-keanu/what-if-everyone-is-a-robot-except-me-thumb.jpg",
 	"http://troll.me/images/conspiracy-keanu/what-if-im-the-only-human-and-everyone-else-are-just-robots-thumb.jpg",
 	"http://troll.me/images/conspiracy-keanu/what-if-like-everyone-i-know-is-a-robot-thumb.jpg",
