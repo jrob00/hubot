@@ -1,9 +1,9 @@
 # Robot Memes
 #
 # hubot robot - mention the word robot to hubot
-#               and he responds with a robot meme
+#               and he responds with a robot-oriented meme
 
-robotmemes = [
+robot_memes = [
 	"http://troll.me/images/ancient-aliens-guy/but-you-see-steve-is-a-alien-robot-thumb.jpg",
 	"http://troll.me/images/arnold-disgusting/i-see-robots-thumb.jpg",
 	"http://troll.me/images/bender/i-am-not-a-robot-i-am-a-unicorn-thumb.jpg",
@@ -28,4 +28,4 @@ robotmemes = [
 
 module.exports = (robot) ->
   robot.respond /(.*)(robot)/i, (msg) ->
-	    msg.send msg.random robotmemes
+	    msg.send msg.random robot_memes
