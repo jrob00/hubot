@@ -8,5 +8,5 @@
 awwyeahguy = "http://0.tqn.com/d/webtrends/1/0/F/A/-/-/awyea.jpg"
 
 module.exports = (robot) ->
-  robot.hear /\[Heroku\](.+)deployed(.+)to hubot/i, (msg) ->
+  robot.hear /(.+)deployed(.+)to hubot/i, (msg) ->
     msg.send awwyeahguy

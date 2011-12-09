@@ -28,5 +28,5 @@ robotmemes = [
 ]
 
 module.exports = (robot) ->
-  robot.respond /robot/i, (msg) ->
+  robot.respond /.*(robot)/i, (msg) ->
 	    msg.send msg.random robotmemes
